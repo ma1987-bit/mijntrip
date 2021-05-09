@@ -1,0 +1,22 @@
+
+ol{
+    font-size: larger;
+    text-decoration-color: darkgreen;
+    align-items: center;
+    border-style: groove;
+    border-radius: 15px;
+    }
+div{
+    font-size: larger;
+   display: inline;
+    text-align: left;
+  }
+  li{
+    font-size:2.3rem;
+    color: mediumseagreen;
+
+  }
+  a{
+    font-size: 1.5rem;
+    text-align: left;
+  }

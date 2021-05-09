@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%
+    let movies  = [
+            {name: "The Matrix", myScore: 90},
+            {name: "Pulp Fuction", myScore: 100},
+            {name: "Monster Hunter", myScore: 5},
+            {name: "Blade Runner", myScore: 100}
+        ];
+    
+    %>
+<form action="/Addmovies" method="POST">
+<label for="Form"> Name</label>
+<input type="text" name="name" value="<%=movies.name%>"><br>
+<br><label for="Score">Meta Score</label>
+<input type="number" name="meta score" value="<%=movies.myScore%>"><br>
+<input type="submit" value="submit">
+
+
+
+</form>  
+</body>
+</html>
