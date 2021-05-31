@@ -1,0 +1,31 @@
+<%- include('header');%>
+
+<%
+if(info !== undefined){
+%>
+<%=info%> <br>
+
+<%}%>
+<form action="/filmstoevoegen" method="post">
+    <div>
+        <label for="titel">Titel</label>
+        <input name="titel" id="titel" value="">
+      </div>
+      <div>
+        <label for="myScore">score</label>
+        <input name="myScore" id="myScore" value="">
+      </div>
+      <div>
+        <label for="timesViewed">timesViewed</label>
+        <input name="timesViewed" id="timesViewed" value="">
+      </div>
+      <div>
+        <label for="jaar">jaar</label>
+        <input name="jaar" id="jaar" value="">
+      </div>
+      <div>
+        <button type='send'>Send</button>
+      </div>
+</form>
+
+<%- include('footer')%>

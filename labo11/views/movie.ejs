@@ -1,0 +1,15 @@
+ <link rel="stylesheet" href="./css/movie.css">
+ <%- include('header')%>
+
+ <ul>
+    <%for(let i =0;i< movies.length;i++){%>
+       <li><%=movies[i].name%></li> <br>
+        <a href="/addmovies/<%= movies[i]._id %>">details</a> || <a href="/removmovies/<%= movies[i]._id %>">delete</a>
+        <%}%>
+</ul>
+
+<a href="/">Go to homepage</a>
+<a href="/filmstoevoegen">Go to add film</a>
+
+ 
+<%- include('footer')%>
