@@ -103,7 +103,7 @@ app.get('/removmovies/:x',async(req:any,res:any)=>{
     }
     
     });  
- const server =app.listen(app.get('port'), ()=>console.log( '[server] http://localhost:' + app.get('port')));
+ const server =app.listen( process.env.PORT || app.get('port'), ()=>console.log( '[server] http://localhost:' + app.get('port')) );
 export{};
 process.on("SIGINT",async()=>{
 try{
@@ -117,8 +117,5 @@ try{
 }
 catch(ex){console.log(ex)}
 finally{process.exit(0)};
-
-
-
 
 })
