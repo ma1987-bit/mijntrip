@@ -1,0 +1,317 @@
+* { 
+    box-sizing: border-box;
+ }
+  html, body {
+   margin: 0; 
+   padding: 0;
+ }
+  header {grid-area: header;}
+  main {grid-area: main;}
+ aside {grid-area: aside;}
+ footer {grid-area: footer;}
+  .mahmoud-container {
+     display: grid;
+   grid-template-areas:
+     'header header ' 
+     'main   aside' 
+     'footer footer'; 
+   grid-gap: 10px;
+   padding: 0;
+   margin: 0;
+    }
+  .mahmoud-container > div, header, main, aside, footer {
+      margin: 0;
+   padding: 5px;
+   font-size: 30px;
+ }
+ header {
+     text-align: left;
+     margin: 0;
+     padding: 5px;
+     display: flex;
+     flex-direction: row;
+     flex-grow: 1;
+     flex-shrink: 1;
+ }
+ header .mahmoud-logo {
+     display: inline-block;
+     width: 30%;
+     height: 160px;
+     margin: 0;
+     padding: 5px;
+     flex-direction: row;
+     flex-grow: 0;
+     flex-shrink: 0;
+     }
+      header nav {
+     display: inline-block;    
+     text-align: center;
+     width: 65%; 
+      }
+        a:visited {
+      color: #6b8fb4;
+    }
+        a:hover {
+      color: #1eff00;
+    }
+   a:active {
+      color: red;
+   }
+      header nav a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-left: 3rem;
+      border-radius: 5px;
+      color: #4287f5;
+      padding: 5px;     
+    }
+    .mahmoud-nav{
+      display: flex;
+      flex-direction: row;
+    }
+     cite {
+      font-size: 1.3rem ;
+      color:#4287f5 ;
+    }
+     img {
+        max-width: 60%;
+        max-height: 70%;
+      }
+      .mahmoud-image{
+        height: 90%;
+        width: 90%;
+      }
+    h1 {
+        font-size: 1.3rem;
+        color: #385E85;
+      }
+       h2 {
+        font-size: 1.1rem;
+        color: #385E85;
+      }
+      p {
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      footer {
+      background-color: #385E85;
+      border-radius: 15px;
+      text-align: center;
+      padding:0.5rem;
+      margin: 0;
+      }
+      form {
+        margin: 1rem;
+      }
+      input[type="button"] { background-color:#385E85; color: white;
+        padding: 4px;  width: 40%; height: 2.5rem; font-size: 1rem;
+        ; margin: 5px 10px 10px 5%; 
+        border: solid; border-radius: 10px; 
+        cursor: hand;
+        text-align: center;}
+        label {
+          font-size: 1.2rem;
+        }
+       .mahmoud-comments {
+         background-color: #385E85;
+         border-radius: 15px;
+       }
+       legend {
+         text-align: center;
+         }
+         fieldset label {
+           font-size: 1rem;
+         }
+         textarea {
+           float: center;
+          }
+         
+        span {
+          font-size: 0.8rem;
+          color: #385E85;
+        }
+     .Bezienswaardigheden {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        justify-content: space-around;
+        margin: 1rem;
+      }
+      .mahmoud-copyright {
+        font-size: 0.6rem;
+      }
+     .mahmoud-sidenav {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: #CDF5E1;
+        border-radius: 15px;
+       }
+       .mahmoud-sidenav a {
+        
+        font-size: 1.3rem;
+       }
+        .mahmoud-link {
+         font-size: 0.99rem;
+         text-decoration: none;
+         background-color: #b8c7b9 ;
+         color:black;
+       }
+       ul {
+        border: dotted;
+        border-radius: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+       li {
+        font-size: 1rem;
+       }
+       figcaption {
+         font-size: 1rem;
+        font-family:Sun,Lucida Sans,Helvetica,Arial,sans-serif;
+         }
+        #mainMap {
+         height:300px;
+       }
+       aside .mahmoud-info {
+         font-size: 1rem;
+         color: cadetblue;
+       }
+        .mahmoud-zoek {
+          display: flex;
+          flex-direction: row;
+          float:right;
+        }
+        .mahmoud-like {
+         color: royalblue;
+                 }
+        table {
+          padding: 1rem;
+          border: 0.2rem groove rgb(186, 205, 229);
+      }
+            table thead tr th {
+          font-size: 0.6rem;
+          color: rgb(55, 44, 211);
+          text-shadow: 1px 1px black;
+          text-align: center;
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+      
+      }
+      table thead tr th:nth-child(even) {
+          background-color: rgb(131, 203, 216);
+      }
+      table thead tr th:nth-child(odd) {
+          background-color: rgb(93, 124, 92);
+      }
+      table thead tr th:nth-child(5n+1) {
+        background-color: white
+    }
+    
+         table tbody {
+             font-size: 0.5rem;
+             text-align: left;
+         }   
+         table tbody :first-child {
+             padding: 0.75rem;
+         }
+             table tbody tr:nth-child(even) > :first-child {
+             background-color: rgb(239,239,239);
+         }
+         table tbody tr:nth-child(odd) > :first-child {
+            background-color: rgb(232,232,232);
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: (251,251,251);
+        }
+        table tbody tr:nth-child(odd) td {
+            background-color: (246,246,246);
+        }
+        table tbody tr td {
+            padding: 0.5rem;
+        }
+               @media only screen and (min-width: 320px) {
+        html {
+          font-size: 20px;
+      }
+      .Bezienswaardigheden {
+        flex-direction: column;      
+      }
+       header .mahmoud-logo {
+        flex-direction: column;
+      }
+      .mahmoud-container {
+          display: grid;
+        grid-template-areas:
+          'header header ' 
+          'main   aside' 
+          'footer footer'; 
+        grid-gap: 10px;
+        padding: 0;
+        margin: 0;
+     }
+      .mahmoud-nav{
+        flex-direction: column;
+      }
+      .mahmoud-sidenav {
+        display: none;
+      }
+       }
+       @media only screen and (min-width: 720px) {
+        html {
+          font-size: 18px;
+      }
+      .Bezienswaardigheden {
+        flex-direction: column;
+      }     
+            header {
+        flex-direction: row;
+      }
+      .mahmoud-sidenav {
+        display: none;
+      }
+      .mahmoud-nav{
+        flex-direction: column;
+      }
+    }
+
+@media only screen and (min-width:1024px) {
+  html {
+    font-size: 18px;
+}
+.Bezienswaardigheden {
+  flex-direction: row;
+}
+.mahmoud-sidenav {
+  display: none;
+}
+header {
+  flex-direction: row;
+}
+.mahmoud-nav{
+  flex-direction: row;
+}
+}
+@media only screen and (min-width:1280px) {
+  html {
+    font-size: 20px;
+}
+.Bezienswaardigheden {
+  flex-direction: row;
+}
+.mahmoud-sidenav {
+  display: flex;
+}
+.mahmoud-nav{
+  flex-direction: row;
+}
+}
+       
+      
+  

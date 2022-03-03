@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="mahmoud-container">
+        <header >
+            <a class="mahmoud-logo" href="index.html"><img src="images/logo.jpg"></a>
+            <nav class="mahmoud-nav">
+                <a href="index.html">Home</a>
+                <a href="trip.html" >Trip</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        </header>
+     <main>
+         <form>
+        <label for="Voornaam">Voornaam</label> <span>*</span>
+        <input type="text" name="Voornaam" id="Voornaam" required autofocus  placeholder="voornaam">  <br>
+        <label for="Familienaam">Familienaam</label> <span>*</span>
+        <input type="text" name="Familienaam" id="Familienaam" required placeholder="Familienaam"> <br>
+    <div class="email">
+   
+        <label for="email">Email adres</label><span>*</span>
+        <input type="email" name="email" id="email" placeholder="Email adres" required><br>
+    </div>
+    <div class="tele">
+        <label for="phone">Telephone Nummer:</label>
+<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+</div>
+<div class="beschrijven">
+ <h1>Beschrijven</h1>
+<textarea rows="17" cols="37" name="comment" form="usrform">
+Enter text here...</textarea>
+</div>
+<div class="button"><input type="button" name="action" id="send" value="verzenden"></div>
+</form>
+     </main>
+    <aside>
+    <form action="">
+        <h2>Contact Persoon</h2>
+        <form action="/action_page.php">
+          <label for="kiez">Kiez een persoon to contacteren:</label>
+          <select name="persoon" id="persoon">
+            <option value="organisator van de uitstap"> Trip organisator</option>
+            <option value="webdesigner">webdesigner</option>
+          </select>
+    </form>
+    </aside>
+    <footer> <p>&copy; 2020 Mahmoud Ahmed |uitstap |MAS</p></footer>
+</body>
+</html>

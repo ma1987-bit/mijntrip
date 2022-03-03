@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antwerpen a la carte</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Add like icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>  
+   <script src="js/congo.js" defer></script>
+</head>
+<body class="mahmoud-container">
+    
+ <header >
+    <a class="mahmoud-logo" href="index.html"><img src="images/logo.jpg"></a>
+    <nav class="mahmoud-nav">
+        <a href="index.html">Home</a>
+        <a href="trip.html" >Trip</a>
+        <a href="contact.html">contact</a>
+    </nav>
+</header>
+<main>
+    <figure>
+    <figcaption>Antwerpen a la carte</figcaption>
+    <img class="mahmoud-image"  src="images/ala cart.jpg" alt="sfeer foto" > <br>
+    <span class="mahmoud-copyright">&copy; MAS Museum</span><br>
+     </figure>
+     <div class="mahmoud-like">
+        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    </div>
+ <div class="mahmoud-comments">
+     <form>
+        <fieldset>
+            <legend>Comments</legend>
+             <label for="uname">Gebruikernaam</label>
+            <input type="text" placeholder="Enter Username" name="uname" required><br>
+            <label for="email"> E-mail</label>
+            <input type="email" placeholder="Enter E-mail" name="psw" required><br>
+            <textarea name="comments"  cols="30" rows="10">Enter your comments</textarea> <br>     
+            <button type="button">submit</button>
+    </fieldset>
+</form>
+</div>
+</main>
+<aside>
+    <div id="mainMap" > </div> <br>
+       <ul>
+        <li>Adres:Hanzestedenplaats 1, 2000 Antwerpen</li><br>
+       <li>Land:Belgie</li><br>
+       <li>Hoogte:65 m</li><br>
+       <li>Opgericht: 17 mei 2011</li><br>
+       <li>Bouwstijl:Deconstructivisme</li><br>
+       </ul> <br>
+       <table>
+           <thead>
+         <tr>
+            <th scope="col">Locatie</th>
+            <th scope="col">X</th>
+            <th scope="col">Y</th>
+            </tr>
+        </thead>
+            <tr>
+            <th scope="row">Graden</th>
+        <td>51.2290°N</td>
+        <td>4.4048°E</td>
+            </tr>
+    <tr>
+            <th scope="row">Geo</th>
+    <td>X</td>
+    <td>Y</td>
+</tr>
+</table>
+</aside>
+<footer> <p>&copy; 2020 Mahmoud Ahmed |uitstap |MAS</p</footer>
